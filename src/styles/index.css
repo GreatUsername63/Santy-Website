@@ -26,16 +26,46 @@ p {
 }
 
 h1 {
-  font-size: 170pt;
+  font-size: 160pt;
   font-weight: 300;
   margin: 0px;
   text-align: center;
+  overflow-wrap: anywhere;
 }
 
 p {
   font-size: 16pt;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#button-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.index-button {
+  display: flex;
+  font-size: x-large;
+  width: 40%;
+  aspect-ratio: 1;
+  border: 0px;
+  cursor: pointer;
+  font-family: 'Courier Prime', 'Times New Roman', Times, serif;
+  color: white;
+  overflow-wrap: anywhere;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#pink-button {
+  background-color: #FF59BD;
+}
+
+#blue-button {
+  background-color: #59CDFF;
 }
 
 #main-image-container {
@@ -55,5 +85,6 @@ p {
 #main-image-container img {
   margin: auto;
   position: relative;
+  width: 85%;
   right: 6%
 }
