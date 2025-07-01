@@ -11,8 +11,12 @@ aside {
   left: 0px;
   height: 100%;
   overflow: auto;
-  border-right: black solid 8px;
+  border-right: black solid 4px;
   justify-content: center;
+}
+
+#project-aside {
+  background-color: #FF59BD;
 }
 
 h1,
@@ -30,7 +34,14 @@ h1 {
   font-weight: 300;
   margin: 0px;
   text-align: center;
-  overflow-wrap: anywhere;
+}
+
+h2 {
+  font-size: 50pt;
+  font-weight: bolder;
+  margin: 0px;
+  text-align: center;
+  color: white;
 }
 
 p {
@@ -87,4 +98,48 @@ p {
   position: relative;
   width: 85%;
   right: 6%
+}
+
+#project-aside-header-container {
+  height: 24%;
+}
+
+#project-aside-button-container {
+  height: 72%;
+}
+
+
+
+.project-button {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px 0px 2px 0px;
+}
+
+.project-button:first-child {
+  border-width: 4px 0px 2px 0px;
+}
+
+.project-button:last-child {
+  border-width: 2px 0px 4px 0px;
+}
+
+
+
+.project-button p {
+  color: white;
+  margin: 0;
+}
+
+.project-button .p1 {
+  font-size: large;
+}
+
+.project-button .p2 {
+  font-size: xx-large;
 }
