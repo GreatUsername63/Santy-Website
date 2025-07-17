@@ -1,3 +1,5 @@
+/* MAIN PAGE */
+
 :root {
   background-color: #F8FFA5;
 }
@@ -10,13 +12,12 @@ aside {
   top: 0px;
   left: 0px;
   height: 100%;
-  overflow: auto;
+  overflow: none;
   border-right: black solid 4px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-#project-aside {
-  background-color: #FF59BD;
+  align-content: center;
 }
 
 h1,
@@ -30,7 +31,7 @@ p {
 }
 
 h1 {
-  font-size: 160pt;
+  font-size: calc(9vw + 9vh);
   font-weight: 300;
   margin: 0px;
   text-align: center;
@@ -45,9 +46,11 @@ h2 {
 }
 
 p {
-  font-size: 16pt;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: calc(1vw + 1vh);
+  line-height: 1.2;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-top: 0px;
 }
 
 #button-container {
@@ -58,7 +61,7 @@ p {
 
 .index-button {
   display: flex;
-  font-size: x-large;
+  font-size: calc(1vw + 1vh);
   width: 40%;
   aspect-ratio: 1;
   border: 0px;
@@ -97,7 +100,37 @@ p {
   margin: auto;
   position: relative;
   width: 85%;
-  right: 6%
+}
+
+/* Make image scale to a maximum of 683.4 pixels */
+@media screen and (min-width: 1200px) {
+  #main-image-container img {
+    width: 683.4px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border: 0px;
+  }
+
+  #main-image-container {
+    position: static;
+    width: 100%;
+    overflow: auto;
+    border: 0px;
+    margin-top: 50px;
+  }
+}
+
+/* PROJECT PAGE */
+
+#project-aside {
+  background-color: #FF59BD;
 }
 
 #project-aside-header-container {
@@ -107,8 +140,6 @@ p {
 #project-aside-button-container {
   height: 72%;
 }
-
-
 
 .project-button {
   height: 20%;
