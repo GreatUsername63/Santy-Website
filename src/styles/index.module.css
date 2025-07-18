@@ -1,10 +1,5 @@
 /* MAIN PAGE */
-
-:root {
-  background-color: #F8FFA5;
-}
-
-aside {
+.mainAside {
   margin: 0;
   padding: 0;
   width: 33%;
@@ -20,32 +15,14 @@ aside {
   align-content: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: 'Courier Prime', 'Times New Roman', Times, serif;
-}
-
-h1 {
+.mainAside h1 {
   font-size: calc(9vw + 9vh);
   font-weight: 300;
   margin: 0px;
   text-align: center;
 }
 
-h2 {
-  font-size: 50pt;
-  font-weight: bolder;
-  margin: 0px;
-  text-align: center;
-  color: white;
-}
-
-p {
+.mainAside p {
   font-size: calc(1vw + 1vh);
   line-height: 1.2;
   padding-left: 10%;
@@ -53,13 +30,13 @@ p {
   margin-top: 0px;
 }
 
-#button-container {
+.buttonContainer {
   width: auto;
   display: flex;
   justify-content: center;
 }
 
-.index-button {
+.indexButton {
   display: flex;
   font-size: calc(1vw + 1vh);
   width: 40%;
@@ -74,15 +51,15 @@ p {
   text-decoration: none;
 }
 
-#pink-button {
+.pinkButton {
   background-color: #FF59BD;
 }
 
-#blue-button {
+.blueButton {
   background-color: #59CDFF;
 }
 
-#main-image-container {
+.mainImageContainer {
   margin: 0;
   padding: 0;
   width: 67%;
@@ -96,7 +73,7 @@ p {
   justify-content: center;
 }
 
-#main-image-container img {
+.mainImageContainer img {
   margin: auto;
   position: relative;
   width: 85%;
@@ -104,13 +81,13 @@ p {
 
 /* Make image scale to a maximum of 683.4 pixels */
 @media screen and (min-width: 1200px) {
-  #main-image-container img {
+  .mainImageContainer img {
     width: 683.4px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  aside {
+  .mainAside {
     position: static;
     width: 100%;
     height: auto;
@@ -118,59 +95,11 @@ p {
     border: 0px;
   }
 
-  #main-image-container {
+  .mainImageContainer {
     position: static;
     width: 100%;
     overflow: auto;
     border: 0px;
     margin-top: 50px;
   }
-}
-
-/* PROJECT PAGE */
-
-#project-aside {
-  background-color: #FF59BD;
-}
-
-#project-aside-header-container {
-  height: 24%;
-}
-
-#project-aside-button-container {
-  height: 72%;
-}
-
-.project-button {
-  height: 20%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px 0px 2px 0px;
-}
-
-.project-button:first-child {
-  border-width: 4px 0px 2px 0px;
-}
-
-.project-button:last-child {
-  border-width: 2px 0px 4px 0px;
-}
-
-
-
-.project-button p {
-  color: white;
-  margin: 0;
-}
-
-.project-button .p1 {
-  font-size: large;
-}
-
-.project-button .p2 {
-  font-size: xx-large;
 }

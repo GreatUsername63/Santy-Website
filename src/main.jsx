@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Index from './Pages/index.jsx'
 import ProjectsPage from './Pages/projects.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './styles/mainStyle.css'
 
 const router = createBrowserRouter([
   { path: "/", element: <Index /> },

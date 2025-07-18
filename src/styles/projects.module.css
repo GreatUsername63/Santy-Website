@@ -1,0 +1,65 @@
+/* PROJECT PAGE */
+.aside {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    overflow: none;
+    border-right: black solid 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #FF59BD;
+}
+
+.asideHeadeContainer {
+    height: 24%;
+}
+
+.asideHeaderContainer h2 {
+    font-size: calc(2vh + 2vw);
+    font-weight: bolder;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.buttonContainer {
+    height: 72%;
+}
+
+.projectButton {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 0px 2px 0px;
+}
+
+.projectButton:first-child {
+    border-width: 4px 0px 2px 0px;
+}
+
+.projectButton:last-child {
+    border-width: 2px 0px 4px 0px;
+}
+
+.projectButton p {
+    color: white;
+    margin: 0;
+}
+
+.projectButton p:first-child {
+    font-size: large;
+}
+
+.projectButton p:last-child {
+    font-size: xx-large;
+}

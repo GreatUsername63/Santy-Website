@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from '../styles/projects.module.css'
 import * as Icons from 'react-bootstrap-icons'
 
 function App() {
@@ -13,17 +14,17 @@ function App() {
 
     return (
         <>
-            <aside id="project-aside">
-                <div id="project-aside-header-container">
+            <aside className={styles.aside}>
+                <div className={styles.asideHeaderContainer}>
                     <Icons.ArrowLeft size={50} />
                     <h2>Projects</h2>
                 </div>
-                <div id="project-aside-button-container">
+                <div className={styles.buttonContainer}>
                     {
                         projects.map((project) => (
-                            <div className="project-button">
-                                <p className="p1">{project.name}</p>
-                                <p className="p2">{project.year}</p>
+                            <div className={styles.projectButton}>
+                                <p>{project.name}</p>
+                                <p>{project.year}</p>
                             </div>
                         ))
                     }
