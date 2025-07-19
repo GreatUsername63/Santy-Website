@@ -24,7 +24,7 @@ function App() {
     })
 
     useEffect(() => {
-        setSelectedProject(projectData[0])
+        setSelectedProject(projectData[8])
     }, [])
 
     //why god why...
@@ -45,8 +45,8 @@ function App() {
                 </div>
                 <div className={styles.buttonContainer}>
                     {
-                        projectData.map((project) => (
-                            <div className={styles.projectButton} key={project.id}>
+                        projectData.map((project, index) => (
+                            <div className={styles.projectButton} key={index}>
                                 <p>{project.name}</p>
                                 <p>{project.year}</p>
                             </div>
@@ -66,8 +66,8 @@ function App() {
                     }
                 </ul>
                 {
-                    selectedProject.links.map((link) => (
-                        <a key={link.id} href={getUrl(link.url)} target="_blank">[[[{link.name}]]]</a>
+                    selectedProject.links.map((link, index) => (
+                        <a key={index} href={getUrl(link.url)} target="_blank">[[[{link.name}]]]</a>
                     ))
                 }
             </div >
