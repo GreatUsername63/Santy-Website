@@ -68,7 +68,7 @@
 .mainContainer {
     margin: 0;
     padding: 0;
-    width: 67%;
+    width: 66%;
     position: fixed;
     display: flex;
     top: 0px;
@@ -76,7 +76,7 @@
     height: 100%;
     overflow: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: end;
 }
 

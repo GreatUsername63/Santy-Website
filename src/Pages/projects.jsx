@@ -1,18 +1,40 @@
 import { useEffect, useState } from "react"
 import styles from '../styles/projects.module.css'
 import * as Icons from 'react-bootstrap-icons'
-
-import placeholderImage from '../assets/imagen 1.png'
+import { projectData } from '../data/projectData.js'
 
 function App() {
-    const [projects, setProjects] = useState([])
+    const [selectedProject, setSelectedProject] = useState({
+        id: -1,
+        name: "Loading",
+        year: "00",
+        role: "Loading developer",
+        image: "null",
+        texts: [
+            "Loading",
+            "Loading"
+        ],
+        links: [
+            {
+                "id": 0,
+                "name": "Loading",
+                "url": "https://google.com"
+            }
+        ]
+    })
 
     useEffect(() => {
-        fetch('../../public/data/projectData.json')
-            .then((res) => res.json())
-            .then((data) => setProjects(data))
-            .catch((err) => console.error('Error loading json: ', err))
+        setSelectedProject(projectData[0])
     }, [])
+
+    //why god why...
+    function getImgUrl(name) {
+        return new URL(`${name}`, import.meta.url).href
+    }
+
+    function getUrl(name) {
+        return new URL(name);
+    }
 
     return (
         <>
@@ -23,8 +45,8 @@ function App() {
                 </div>
                 <div className={styles.buttonContainer}>
                     {
-                        projects.map((project) => (
-                            <div className={styles.projectButton}>
+                        projectData.map((project) => (
+                            <div className={styles.projectButton} key={project.id}>
                                 <p>{project.name}</p>
                                 <p>{project.year}</p>
                             </div>
@@ -33,17 +55,22 @@ function App() {
                 </div>
             </aside>
             <div className={styles.mainContainer}>
-                <h1>2D DODGER</h1>
-                <p>Solo Lua developer</p>
-                <img src={placeholderImage}></img>
+                <h1>{selectedProject.name}</h1>
+                <p>{selectedProject.role}</p>
+                <img src={getImgUrl(selectedProject.image)}></img>
                 <ul>
-                    <li>Simple game about avoiding rocks using two spaceships placed in the vertical and horizontal axis. Done in approximately one day.</li>
-                    <li>Used object oriented programming in a limited system with dictionaries and collision algorithms.</li>
-                    <li>Used Lua and Pico-8.</li>
+                    {
+                        selectedProject.texts.map((text, index) => (
+                            <li key={index}>{text}</li>
+                        ))
+                    }
                 </ul>
-                <a href="google.com">[[[Game Link]]]</a>
-                <a href="google.com">[[[Github Link]]]</a>
-            </div>
+                {
+                    selectedProject.links.map((link) => (
+                        <a key={link.id} href={getUrl(link.url)} target="_blank">[[[{link.name}]]]</a>
+                    ))
+                }
+            </div >
         </>
     )
 }
