@@ -32,7 +32,8 @@ export default function ProjectAside({ projectData }) {
             className={styles.aside}
             drag="y" initial={{ y: -4 }}
             dragConstraints={{ top: -(motionHeight - viewHeight) + 4, bottom: -4 }}
-            dragElastic={0.7} dragTransition={{ bounceStiffness: 200, bounceDamping: 15 }}
+            dragElastic={0.2}
+            dragTransition={{ bounceStiffness: 200, bounceDamping: 15 }}
             whileTap={{ cursor: "grabbing" }}
         >
             <div className={styles.asideHeaderContainer}>
