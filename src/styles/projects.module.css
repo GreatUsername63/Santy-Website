@@ -6,12 +6,13 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 100%;
     overflow: none;
     border-right: black solid 4px;
+    border-top: black solid 4px;
     display: flex;
     flex-direction: column;
     background-color: #FF59BD;
+    cursor: grab;
 }
 
 .asideHeaderContainer {
