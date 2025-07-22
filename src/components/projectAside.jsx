@@ -5,7 +5,7 @@ import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import useWindowDimensions from "../utils/useWindowDimensions"
 
 export default function ProjectAside({ projectData }) {
-    const [viewWidth, viewHeight] = useWindowDimensions();
+    const viewHeight = useWindowDimensions().height;
     const [motionHeight, setMotionHeight] = useState(0);
     const motionRef = useRef(null);
 
