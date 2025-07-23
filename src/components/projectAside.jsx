@@ -4,6 +4,8 @@ import styles from '../styles/projects.module.css'
 import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import useWindowDimensions from "../utils/useWindowDimensions"
 
+import { Link } from "react-router-dom"
+
 export default function ProjectAside({ projectData }) {
     const viewHeight = useWindowDimensions().height;
     const [motionHeight, setMotionHeight] = useState(0);
@@ -35,7 +37,7 @@ export default function ProjectAside({ projectData }) {
             whileTap={{ cursor: "grabbing" }}
         >
             <div className={styles.asideHeaderContainer}>
-                <Icons.ArrowLeft size={50} />
+                <Link to={"/"}><Icons.ArrowLeft size={50} /></Link>
                 <h2>Projects</h2>
             </div>
             <div className={styles.buttonContainer}>

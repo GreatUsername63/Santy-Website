@@ -20,6 +20,14 @@
     flex-direction: column;
 }
 
+.asideHeaderContainer a {
+    color: #3a0381;
+}
+
+.asideHeaderContainer a:hover {
+    color: white;
+}
+
 .asideHeaderContainer h2 {
     font-size: calc(4vw + 2vh);
     font-weight: bolder;
