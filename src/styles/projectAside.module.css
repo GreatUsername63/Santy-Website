@@ -1,3 +1,5 @@
+/* Main container */
+
 .aside {
     margin: 0;
     padding: 0;
@@ -6,17 +8,19 @@
     top: 0px;
     left: 0px;
     overflow: none;
-    border-right: black solid 4px;
-    border-top: black solid 4px;
     display: flex;
     flex-direction: column;
-    background-color: #FF59BD;
     cursor: grab;
 }
+
+
+/* Header container */
 
 .asideHeaderContainer {
     display: flex;
     flex-direction: column;
+    background-color: #FF59BD;
+    outline: black solid 4px;
 }
 
 .asideHeaderContainer a {
@@ -36,22 +40,16 @@
     padding-bottom: 50px;
 }
 
+/* Button */
+
 .projectButton {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px 0px 2px 0px;
-}
-
-.projectButton:first-child {
-    border-width: 4px 0px 2px 0px;
-}
-
-.projectButton:last-child {
-    border-width: 2px 0px 4px 0px;
+    background-color: #FF59BD;
+    outline: black 4px solid;
+    margin-top: 4px;
 }
 
 .projectButton p {
