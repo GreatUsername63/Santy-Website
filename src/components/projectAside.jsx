@@ -3,6 +3,7 @@ import * as Icons from 'react-bootstrap-icons'
 import styles from '../styles/projectAside.module.css'
 import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import useWindowDimensions from "../utils/useWindowDimensions"
+import ProjectAsideButton from './projectAsideButton'
 
 import { Link } from "react-router-dom"
 
@@ -43,10 +44,7 @@ export default function ProjectAside({ projectData }) {
             <div className={styles.buttonContainer}>
                 {
                     projectData.map((project, index) => (
-                        <div className={styles.projectButton} key={index}>
-                            <p>{project.name}</p>
-                            <p>{project.year}</p>
-                        </div>
+                        <ProjectAsideButton project={project} key={index} />
                     ))
                 }
             </div>
