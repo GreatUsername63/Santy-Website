@@ -4,7 +4,7 @@ import { projectData } from '../data/projectData.js'
 import ProjectAside from "../components/projectAside.jsx"
 import ProjectInfo from "../components/projectInfo.jsx"
 
-function App() {
+function Projects() {
     const [selectedProject, setSelectedProject] = useState({
         id: -1,
         name: "Loading",
@@ -36,4 +36,4 @@ function App() {
     )
 }
 
-export default App
+export default Projects

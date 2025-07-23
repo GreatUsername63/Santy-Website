@@ -13,8 +13,6 @@ export default function ProjectAside({ projectData }) {
         const handleAsideResize = () => {
             if (motionRef.current) {
                 setMotionHeight(motionRef.current.offsetHeight)
-                console.log("View " + viewHeight)
-                console.log("Height " + motionHeight)
             }
         }
 

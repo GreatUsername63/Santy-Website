@@ -2,7 +2,7 @@ import autoretrato from '../assets/08_05_24 autoretrato chistoso 1.png'
 import styles from "../styles/index.module.css"
 import { Link } from "react-router-dom"
 
-function App() {
+function Index() {
   return (
     <>
       <aside className={styles.mainAside}>
@@ -23,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default Index
