@@ -50,6 +50,9 @@
     background-color: #FF59BD;
     outline: black 4px solid;
     margin-top: 4px;
+    width: 200%;
+    position: relative;
+    left: -100%;
 }
 
 .projectButton p {
@@ -59,6 +62,9 @@
 
 .projectButton p:first-child {
     font-size: calc(1vw + 1vh);
+    position: relative;
+    left: 50%;
+    width: 30%;
     padding-left: 5px;
 }
 
