@@ -1,4 +1,4 @@
-import styles from '../styles/projects.module.css'
+import styles from '../styles/projectInfo.module.css'
 import { getUrl, getImgUrl } from '../utils/urlFunctions'
 
 export default function ProjectInfo({ project }) {

@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import * as Icons from 'react-bootstrap-icons'
-import styles from '../styles/projects.module.css'
+import styles from '../styles/projectAside.module.css'
 import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import useWindowDimensions from "../utils/useWindowDimensions"
 
