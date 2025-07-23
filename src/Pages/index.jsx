@@ -2,9 +2,14 @@ import autoretrato from '../assets/08_05_24 autoretrato chistoso 1.png'
 import styles from "../styles/index.module.css"
 import { Link } from "react-router-dom"
 
+import { motion } from 'motion/react'
+
 function Index() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <aside className={styles.mainAside}>
         <h1>Hi!</h1>
         <p>My name is Santiago Ramírez Enríquez, a junior software engineer and aspirant video game programmer.
@@ -19,7 +24,7 @@ function Index() {
         <img src={autoretrato}></img>
       </div>
 
-    </>
+    </motion.div>
   )
 }
 

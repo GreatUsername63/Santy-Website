@@ -4,6 +4,8 @@ import { projectData } from '../data/projectData.js'
 import ProjectAside from "../components/projectAside.jsx"
 import ProjectInfo from "../components/projectInfo.jsx"
 
+import { motion } from "motion/react"
+
 function Projects() {
     const [selectedProject, setSelectedProject] = useState({
         id: -1,
@@ -29,10 +31,13 @@ function Projects() {
     }, [])
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}>
             <ProjectAside projectData={projectData} />
             <ProjectInfo project={selectedProject} />
-        </>
+        </motion.div>
     )
 }
 
