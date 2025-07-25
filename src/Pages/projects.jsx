@@ -30,12 +30,16 @@ function Projects() {
         setSelectedProject(projectData[0])
     }, [])
 
+    function handleItemPull(index) {
+        setSelectedProject(projectData[index])
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
-            <ProjectAside projectData={projectData} />
+            <ProjectAside projectData={projectData} handleItemPull={handleItemPull} />
             <ProjectInfo project={selectedProject} />
         </motion.div>
     )

@@ -7,10 +7,11 @@ import ProjectAsideButton from './projectAsideButton'
 
 import { Link } from "react-router-dom"
 
-export default function ProjectAside({ projectData }) {
+export default function ProjectAside({ projectData, handleItemPull }) {
     const viewHeight = useWindowDimensions().height;
     const [motionHeight, setMotionHeight] = useState(0);
     const motionRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0); //Used to tell the other buttons which should be active
 
     useEffect(() => {
         const handleAsideResize = () => {
@@ -26,6 +27,11 @@ export default function ProjectAside({ projectData }) {
             window.removeEventListener('resize', handleAsideResize)
         }
     })
+
+    function onItemPull(index) {
+        handleItemPull(index)
+        setActiveIndex(index)
+    }
 
     return (
         //Constraints have -4 because of the border
@@ -44,7 +50,7 @@ export default function ProjectAside({ projectData }) {
             <div className={styles.buttonContainer}>
                 {
                     projectData.map((project, index) => (
-                        <ProjectAsideButton project={project} key={index} />
+                        <ProjectAsideButton project={project} key={index} projectIndex={index} activeIndex={activeIndex} onItemPull={() => onItemPull(index)} />
                     ))
                 }
             </div>
