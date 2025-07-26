@@ -1,11 +1,11 @@
 .mainContainer {
     margin: 0;
     padding: 0;
-    width: 66%;
+    width: 63%;
     position: fixed;
     display: flex;
     top: 0px;
-    left: 32%;
+    left: 36%;
     height: 100%;
     overflow: none;
     flex-direction: column;
@@ -18,35 +18,36 @@
     text-align: end;
     font-weight: bold;
     margin: 0;
+    max-width: 90%;
+    line-height: 90%;
+    word-wrap: break-word;
 }
 
 .mainContainer p {
     font-size: calc(1vw + 1vh);
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .mainContainer img {
-    height: 40%;
-}
-
-/* Make image scale to a maximum of 683.4 pixels */
-@media screen and (min-width: 1400px) {
-    .mainContainer img {
-        height: 375.2px;
-    }
+    min-width: 20vw;
+    max-width: 60vw;
+    max-height: 40vh;
 }
 
 .mainContainer ul {
     list-style-position: inside;
+    width: 50vw;
 }
 
 .mainContainer li {
-    font-size: calc(.2vw + 1.5vh);
+    font-size: calc(.4vw + 1.5vh);
+    vertical-align: bottom;
     text-align: end;
 }
 
 .mainContainer a {
-    font-size: calc(2vw + 2vh);
+    font-size: calc(1.2vw + 1.2vh);
     color: #00B2FF;
     text-decoration: none;
 }
