@@ -11,7 +11,11 @@ function Education() {
         exit={{ opacity: 0 }}>
         <Link to={"/"}><Icons.ArrowLeft size={50} /></Link>
         <div className={styles.flexContainer}>
-            <img src="/itesm.svg" className={styles.itesmLogo}></img>
+            <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                src="/itesm.svg"
+                className={styles.itesmLogo}></motion.img>
             <div className={styles.degreeInfo}>
                 <p>B. S. Engineering in Computer Technologies, Graduated from Tecnológico de Monterrey in the year</p>
                 <h2>2025</h2>
