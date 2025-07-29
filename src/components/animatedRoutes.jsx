@@ -16,9 +16,9 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Index />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/education" element={<Education />} />
+                <Route path="/Santy-Website/" element={<Index />} />
+                <Route path="/Santy-Website/projects" element={<Projects />} />
+                <Route path="/Santy-Website/education" element={<Education />} />
             </Routes>
         </AnimatePresence>
     )
