@@ -59,7 +59,7 @@ export const projectData = [
         name: "Text rpg using OOP",
         year: "‘22",
         role: "Solo C++ Developer",
-        image: "textrpgimage.png",
+        image: "/textrpg.png",
         texts: [
             "Made an RPG in text in C++. Built a battle system, an exploration menu, an item system and 3 different endings using Object oriented programming, vectors, abstract classes, pointers and polimorfism.",
             "Used C+++"
@@ -153,6 +153,7 @@ export const projectData = [
         name: "Chain gun",
         year: "‘24",
         role: "Unity developer",
+        image: "/chaingun.PNG",
         texts: [
             "Made a unity game alongside 2 friends in the \"New scene game jam\" that took place in Purdue university in 2024 in just a weekend.",
             "Contributed making the music, level art, level design and scripting for the level and UI.",
