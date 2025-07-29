@@ -30,6 +30,12 @@
   margin-top: 0px;
 }
 
+.disclaimer {
+  display: none;
+  color: white;
+  background-color: #FF59BD;
+}
+
 .buttonContainer {
   width: auto;
   display: flex;
@@ -101,5 +107,9 @@
     overflow: auto;
     border: 0px;
     margin-top: 50px;
+  }
+
+  .disclaimer {
+    display: block;
   }
 }
