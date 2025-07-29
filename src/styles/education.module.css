@@ -1,0 +1,81 @@
+.parentDiv {
+    background-color: #00B2FF;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.parentDiv a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #0d0080;
+}
+
+.parentDiv a:hover {
+    color: white;
+}
+
+.flexContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.itesmLogo {
+    filter: invert(100%) sepia(78%) saturate(0%) hue-rotate(96deg) brightness(200%) contrast(102%);
+    width: 30%;
+}
+
+.degreeInfo {
+    width: 33%;
+}
+
+.degreeInfo p {
+    color: white;
+    width: 100%;
+    font-size: calc(1vw + 1vh);
+    margin: 0;
+}
+
+.degreeInfo h2 {
+    color: white;
+    width: 100%;
+    font-size: calc(5vw + 5vh);
+    margin: 0;
+    font-weight: 100;
+}
+
+.tecnicalSkills {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnicalSkills p {
+    color: white;
+    font-size: calc(1.2vw + 1.2vh);
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    word-break: break-word;
+}
+
+.tecnicalSkills ul {
+    list-style: inside;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tecnicalSkills li {
+    color: white;
+    text-align: end;
+    font-size: calc(0.8vw + 0.8vh);
+}
