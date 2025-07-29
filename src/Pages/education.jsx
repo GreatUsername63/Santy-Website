@@ -36,6 +36,7 @@ function Education() {
                     <li>Unity Engine</li>
                     <li>Vite</li>
                     <li>Figma</li>
+                    <li>Framer motion</li>
                 </ul>
             </div>
         </div>

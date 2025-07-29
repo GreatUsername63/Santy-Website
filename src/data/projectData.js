@@ -1,3 +1,5 @@
+import { image } from "motion/react-client";
+
 export const projectData = [
     {
         name: "2D DODGER",
@@ -165,5 +167,16 @@ export const projectData = [
                 url: "https://prikense.itch.io/chain-gun"
             }
         ]
+    },
+    {
+        name: "Personal portfolio website",
+        year: "‘25",
+        role: "Frontend developer",
+        image: "/pi.png",
+        texts: [
+            "The website you're watching this text on!",
+            "Done everything on my own including design, animations and content",
+            "Made using React, CSS and framer motion"
+        ],
     },
 ]
