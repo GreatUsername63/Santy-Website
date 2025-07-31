@@ -5,7 +5,7 @@ export const projectData = [
         name: "2D DODGER",
         year: "‘21",
         role: "Solo LUA developer",
-        image: "/2dimesiondodge_2.gif",
+        image: "2dimesiondodge_2.gif",
         texts: [
             "Simple game about avoiding rocks using two spaceships placed in the vertical and horizontal axis. Done in approximately one day.",
             "Used object oriented programming in a limited system with dictionaries and collision algorithms.",
@@ -26,7 +26,7 @@ export const projectData = [
         name: "Project inventories",
         year: "‘21",
         role: "Lead python developer",
-        image: "/inventarios.png",
+        image: "inventarios.png",
         texts: [
             "Developed a program alongside 4 other students that kept track of the inventory and sales data of a hypothetical store.",
             "Made sure that the text interface looks aesthetically pleasing.",
@@ -61,7 +61,7 @@ export const projectData = [
         name: "Text rpg using OOP",
         year: "‘22",
         role: "Solo C++ Developer",
-        image: "/textrpg.png",
+        image: "textrpg.png",
         texts: [
             "Made an RPG in text in C++. Built a battle system, an exploration menu, an item system and 3 different endings using Object oriented programming, vectors, abstract classes, pointers and polimorfism.",
             "Used C+++"
@@ -122,7 +122,7 @@ export const projectData = [
         name: "2D Dodger DX",
         year: "‘24",
         role: "Unity developer",
-        image: "/2ddodgerdx.png",
+        image: "2ddodgerdx.png",
         texts: [
             "Remaked the game I developed in pico 8 into Unity engine using 3d graphics.",
             "All planning, designs, scenes, scripting, modeling and sound design has been done by me.",
@@ -155,7 +155,7 @@ export const projectData = [
         name: "Chain gun",
         year: "‘24",
         role: "Unity developer",
-        image: "/chaingun.PNG",
+        image: "chaingun.PNG",
         texts: [
             "Made a unity game alongside 2 friends in the \"New scene game jam\" that took place in Purdue university in 2024 in just a weekend.",
             "Contributed making the music, level art, level design and scripting for the level and UI.",
@@ -172,7 +172,7 @@ export const projectData = [
         name: "Personal portfolio website",
         year: "‘25",
         role: "Frontend developer",
-        image: "/pi.png",
+        image: "pi.png",
         texts: [
             "The website you're watching this text on!",
             "Done everything on my own including design, animations and content",

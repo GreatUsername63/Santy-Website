@@ -2,6 +2,7 @@ import { motion } from "motion/react"
 import { Link } from "react-router-dom"
 import * as Icons from 'react-bootstrap-icons'
 import styles from '../styles/education.module.css'
+import itesmSvg from '../assets/itesm.svg'
 
 function Education() {
     return (<motion.div
@@ -9,12 +10,12 @@ function Education() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}>
-        <Link to={"/"}><Icons.ArrowLeft size={50} /></Link>
+        <Link to={"/Santy-Website/"}><Icons.ArrowLeft size={50} /></Link>
         <div className={styles.flexContainer}>
             <motion.img
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                src="/itesm.svg"
+                src={itesmSvg}
                 className={styles.itesmLogo}></motion.img>
             <div className={styles.degreeInfo}>
                 <p>B. S. Engineering in Computer Technologies, Graduated from Tecnológico de Monterrey in the year</p>

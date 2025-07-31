@@ -35,10 +35,6 @@ export default function ProjectAside({ projectData, handleItemPull }) {
         setActiveIndex(index)
     }
 
-    useMotionValueEvent(y, "change", (latest) => {
-        console.log(latest)
-    })
-
     function handleWheelScroll(event) {
         event.preventDefault();
         animate(scope.current, { y: clamp(-(motionHeight - viewHeight) + 4, -4, y.get() - event.deltaY * 4) }, { type: "spring", bounceStiffness: 200, bounceDamping: 15 })
@@ -57,7 +53,7 @@ export default function ProjectAside({ projectData, handleItemPull }) {
             onWheel={handleWheelScroll}
         >
             <div className={styles.asideHeaderContainer}>
-                <Link to={"/"}><Icons.ArrowLeft size={50} /></Link>
+                <Link to={"/Santy-Website/"}><Icons.ArrowLeft size={50} /></Link>
                 <h2>Projects</h2>
             </div>
             <div className={styles.buttonContainer}>

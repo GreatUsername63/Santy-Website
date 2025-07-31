@@ -20,7 +20,7 @@ function Index() {
           <CustomMotionComponent
             as={Link}
             className={`${styles.indexButton} ${styles.pinkButton}`}
-            to={"/projects"}
+            to={"/Santy-Website/projects"}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
             Projects
@@ -28,7 +28,7 @@ function Index() {
           <CustomMotionComponent
             as={Link}
             className={`${styles.indexButton} ${styles.blueButton}`}
-            to={"/education"}
+            to={"/Santy-Website/education"}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
             Education
